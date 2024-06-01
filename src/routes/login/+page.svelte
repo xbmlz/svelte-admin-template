@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { Card, Label, Input } from 'flowbite-svelte';
+	import { Card, Label, Input, Checkbox, A, Button } from 'flowbite-svelte';
 
 	export let site = {
 		name: 'Gin Svelte Template',
@@ -49,8 +49,14 @@
 				</div>
 
 				<div class="flex items-start">
-						<Checkbox class="accent-primary-600" name="remember">Remember me</Checkbox>
-						<A href={lostPasswordLink} aClass="ml-auto text-sm">Lost Password?</A>
+					<Checkbox class="accent-primary-600" name="remember">Remember me</Checkbox>
+					<A href="" aClass="ml-auto text-sm">Lost Password?</A>
+				</div>
+
+				<Button type="submit" size="lg">Login to your account</Button>
+
+				<div class="text-sm font-medium text-gray-500 dark:text-gray-400">
+					Not registered? <A href="/register">Create account</A>
 				</div>
 			</form>
 		</Card>

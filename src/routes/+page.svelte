@@ -1,7 +1,1 @@
-<script lang="ts">
-	
-</script>
-
-<main class="p-4">
-    main
-</main>
+<h1>Main</h1>
